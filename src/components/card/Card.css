@@ -1,0 +1,26 @@
+.box-card {
+  width: 450px;
+  background: #0000004d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .5s;
+}
+
+.box-card:hover {
+  transform: scale(1.01);
+  background: #0000005b;
+}
+
+#lixeira {
+  width: 20px;
+  transition: .5s;
+}
+
+#lixeira:hover {
+  transform: scale(1.01);
+  width: 22px;
+}

@@ -1,0 +1,51 @@
+.criar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 350px;
+  flex-direction: column;
+  padding: 20px;
+  background: #0000004d;
+  border-radius: 15px;
+  gap: 10px;
+  color: #fff;
+}
+
+#title {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #0000005b;
+}
+
+input:focus {
+  outline: #008db1 1px solid;
+}
+
+button {
+  width: 100%;
+  background: #003077;
+  outline: none;
+  border: none;
+  height: 40px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+button:hover {
+  transform: scale(1.01);
+  background: #01398f;
+}
