@@ -14,7 +14,7 @@ const Criar = () => {
       email: inputEmail.current.value,
       age: inputAge.current.value,
     })
-
+    getUsers()
   }
 
   return (

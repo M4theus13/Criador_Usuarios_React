@@ -23,17 +23,20 @@
 
 #buttonLixeira {
   border: 1px solid black;
-  background: transparent;
   width: 25px;
   height: 25px;
-}
-
-#lixeira {
-  width: 20px;
+  background-image: url('../../assets/lixeira.png');
+  outline: none;
+  background: transparent;
+  border: none;
   transition: .5s;
 }
 
-#lixeira:hover {
+#buttonLixeira:hover {
   transform: scale(1.01);
-  width: 22px;
+}
+
+#lixeira {
+  width: 25px;
+  height: 25px;
 }

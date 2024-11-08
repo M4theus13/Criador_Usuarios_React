@@ -3,7 +3,9 @@ import './Card.css'
 import Lixeira from '../../assets/lixeira.png'
 import api from '../../service/api'
 
+
 function Card () {
+
   const [users, setUsers] = useState([])
 
   async function getUsers () {
@@ -15,9 +17,9 @@ function Card () {
     getUsers()
   }, [])
   
-  async function deleteUsers () { //mexer aqui
-    const usersApi = await api.delete('/usuarios')
-    setUsers(usersApi.data)
+  async function deleteUsers (id) { 
+    await api.delete(`/usuarios/${id}`)
+    getUsers()
   }
 
   return (
@@ -30,8 +32,8 @@ function Card () {
             <p>Idade: {user.age}</p>
           </div>
           <div>
-            <button id='buttonLixeira' onClick={deleteUsers}>
-              <img src={Lixeira} alt="lixeira-icon" id='lixeira' />
+            <button id='buttonLixeira' onClick={() => deleteUsers(user.id)}>
+              <img src={Lixeira} alt="lixeira" id='lixeira' />
             </button>
           </div>
         </div>
