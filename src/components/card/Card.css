@@ -1,4 +1,10 @@
 .box-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
   width: 450px;
   background: #0000004d;
   color: #fff;
@@ -10,9 +16,16 @@
   transition: .5s;
 }
 
-.box-card:hover {
+.card:hover {
   transform: scale(1.01);
   background: #0000005b;
+}
+
+#buttonLixeira {
+  border: 1px solid black;
+  background: transparent;
+  width: 25px;
+  height: 25px;
 }
 
 #lixeira {

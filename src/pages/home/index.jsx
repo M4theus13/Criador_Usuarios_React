@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className='box-main'>
-      <Criar></Criar>
-      <Card></Card>
+      <Criar ></Criar>
+      <Card ></Card>
     </div>
   )
 }
